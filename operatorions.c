@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 void    swap(int *stack)
 {
 	int recipient;

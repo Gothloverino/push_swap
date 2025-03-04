@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void    swap(int *stack);
+
 void init_stack_a(int argc, char **argv, int *stack_a)
 {
 	int i;
@@ -32,5 +34,7 @@ int main(int argc, char **argv)
 	//int stack_b[100];
 
 	init_stack_a(argc, argv, stack_a);
+	print_stack(argc, stack_a);
+	swap(stack_a);
 	print_stack(argc, stack_a);
 }

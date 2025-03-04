@@ -1,3 +1,8 @@
 # Purpose: Makefile for push_swap
+SRCS = operatorions.c push_swap.c
+
 all:
-	gcc -Wall -Wextra -Werror push_swap.c -o push_swap
+	gcc $(SRCS) -o push_swap 
+	# gcc -Wall -Wextra -Werror $(SRCS) -o push_swap 
+t:
+	./push_swap 2 1

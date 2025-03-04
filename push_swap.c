@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 void    swap(int *stack);
+void	rotate(int *stack, int argc);
+void	reverse_rotate(int *stack, int argc);
 
 void init_stack_a(int argc, char **argv, int *stack_a)
 {
@@ -35,6 +37,6 @@ int main(int argc, char **argv)
 
 	init_stack_a(argc, argv, stack_a);
 	print_stack(argc, stack_a);
-	swap(stack_a);
+	reverse_rotate(stack_a, argc);
 	print_stack(argc, stack_a);
 }

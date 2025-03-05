@@ -34,9 +34,11 @@ int main(int argc, char **argv)
 {
 	int stack_a[100];
 	//int stack_b[100];
+	int *stack_b;
 
+	stack_b = NULL;
 	init_stack_a(argc, argv, stack_a);
 	print_stack(argc, stack_a);
-	reverse_rotate(stack_a, argc);
+	push_b(stack_a, stack_b, argc - 1, 0);
 	print_stack(argc, stack_a);
 }

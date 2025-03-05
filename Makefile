@@ -1,5 +1,5 @@
 # Purpose: Makefile for push_swap
-SRCS = operatorions.c push_swap.c
+SRCS = operations.c push_swap.c
 
 all:
 	gcc $(SRCS) -o push_swap 
